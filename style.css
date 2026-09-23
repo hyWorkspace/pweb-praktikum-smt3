@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #675947;
+}
+
+header {
+    background-color: #3d3121;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 20px;
+    color: #eaddca;
+    font-weight: normal;
+}
+
+.menu-link { 
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu-link:hover {
+    color: #857662;
+    text-decoration: underline;
+}
+
+#tentang {
+    text-align: justify;
+    background-color: #eaddca;
+    padding: 20px;
+}
+
+#keahlian {
+    background-color: #eaddca;
+}
+
+
+
+h3 {
+    color: #3d3121
+}
+
+footer {
+    text-align: center;
+    color: #857662;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-style: italic;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #3d3121;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #675947;
+    color: #ffffff;
+}
+
+.kontak-link { 
+    color: #3d3121;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.kontak-link:hover {
+    color: #857662;
+    text-decoration: underline;
+}
