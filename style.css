@@ -7,7 +7,11 @@ header {
     background-color: #3d3121;
     color: #ffffff;
     text-align: center;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -19,9 +23,16 @@ h2 {
     font-size: 20px;
     color: #eaddca;
     font-weight: normal;
+    margin-top: 5px;
 }
 
-.menu-link { 
+h3 {
+    color: #3d3121;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.menu-link {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -37,16 +48,16 @@ h2 {
     text-align: justify;
     background-color: #eaddca;
     padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 #keahlian {
     background-color: #eaddca;
-}
-
-
-
-h3 {
-    color: #3d3121
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
 }
 
 footer {
@@ -54,11 +65,17 @@ footer {
     color: #857662;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
     text-transform: uppercase;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-style: italic;
 }
 
@@ -68,9 +85,8 @@ p {
 
 img {
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px;
 }
 
 table {
@@ -79,7 +95,8 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #3d3121;
     padding: 10px;
     text-align: left;
@@ -90,14 +107,69 @@ th {
     color: #ffffff;
 }
 
-.kontak-link { 
+.kontak-link {
+    background-color: #eaddca;
+    padding: 5px 10px;
+    border-radius: 5px;
     color: #3d3121;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
+    margin-right: 10px;
 }
 
 .kontak-link:hover {
-    color: #857662;
-    text-decoration: underline;
+    background-color: #3d3121;
+    color: #fff;
+}
+
+section {
+    border: 1px solid #d9d9d9;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kontak p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#kontak form {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontak label {
+    color: #3d3121;
+}
+
+#kontak input,
+#kontak textarea {
+    padding: 10px;
+    border: 1px solid #3d3121;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: -25px;
+}
+
+#kontak button {
+    background-color: #3d3121;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#kontak button:hover {
+    background-color: #675947;
 }
