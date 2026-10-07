@@ -53,6 +53,11 @@ h3 {
     align-items: center;
 }
 
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
 #keahlian {
     background-color: #eaddca;
     display: flex;
@@ -138,7 +143,6 @@ header, main, footer {
 #kontak p {
     margin-bottom: 10px;
     font-size: 16px;
-    font-weight: bold;
 }
 
 #kontak form {

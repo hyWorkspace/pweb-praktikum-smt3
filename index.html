@@ -11,6 +11,7 @@
     <!-- Identitas Mahasiswa dan Menu Navigasi -->
     <h1>Haya Lintang Cahyawi</h1>
     <h2>Mahasiswa Program Studi Teknologi Informasi</h2>
+    <p id="sapaan"></p>
     <nav>
       <a class="menu-link" href="#tentang">Tentang Saya</a> 
       <a class="menu-link" href="#pendidikan">Pendidikan</a> 
@@ -23,13 +24,16 @@
     <!-- Deskripsi singkat tentang diri dan foto profil -->
     <section id="tentang">
       <img src="pfp.jpeg" alt="Foto Profil" class="profile-img" width="200" height="200"/>
-      <p>
-        <strong>Halloo gaisss🌻,</strong> perkenalkan namaku Haya. Aku adalah mahasiswa teknologi informasi di UIN Salatiga. 
-        Aku berasal dari Kota Semarang. Hobiku membaca novel📖, merajut🧶, dan menonton drama Korea🎬. Aku memilih
-        melanjutkan studi di bidang Teknologi Informasi UIN Salatiga karena ingin melanjutkan jurusan yang masih 
-        linier dengan jurusanku saat SMK dulu. Aku tertarik belajar pemrograman website  karena ingin membuat website 
-        yang menarik dan fungsional. Selain itu, aku juga ingin menjadi <strong>✨Software Engineer✨</strong> di masa depan.
-      </p>
+      <div class="bio">
+        <p>
+          <strong>Halloo gaisss🌻,</strong> perkenalkan namaku Haya. Aku adalah mahasiswa Teknologi Informasi di UIN Salatiga. 
+          Aku berasal dari Kota Semarang. Hobiku membaca novel📖, merajut🧶, dan menonton drama Korea🎬. 
+        </p>
+        <p>Aku memilih melanjutkan studi di bidang <strong>Teknologi Informasi</strong> UIN Salatiga karena ingin melanjutkan jurusan yang masih 
+          linier dengan jurusanku saat SMK dulu. Aku tertarik belajar pemrograman website. Aku ingin menjadi <strong>✨Software Engineer✨</strong> di masa depan.
+        </p>
+        <p id="info-tambahan"></p>
+      </div>
     </section>
 
     <!-- Tabel daftar riwayat pendidikan -->
@@ -61,29 +65,30 @@
     <section id="keahlian">
       <div class="skill-block">
         <h3>Keahlian</h3>
-        <ol>
+        <ul>
           <li>HTML &amp; CSS dasar</li>
           <li>Logika pemrograman (Python)</li>
           <li>Desain dengan Canva</li>
           <li>Desain UI/UX dengan Figma</li>
           <li>Microsoft Office</li>
-        </ol>
+        </ul>
+        <ul id="keahlian-tambahan"></ul>
       </div>
       
       <div class="skill-block">
         <h3>Urutan Belajar Semester Ini</h3>
-        <ul>
+        <ol>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-        </ul>
+        </ol>
       </div>
     </section>
 
     <!-- Formulir kontak -->
     <section id="kontak">
       <h3>Hubungi Saya</h3>
-      <form>
+      <form id="form-kontak">
         <label for="nama">Nama:</label><br>
         <input type="text" id="nama" name="nama"><br><br>
       
@@ -98,18 +103,24 @@
       
         <button type="submit">Kirim</button>
       </form>
+      <p id="hasil-form"></p>
 
-      <p>Atau kunjungi:</p>
+      <p><strong>Kunjungi:</strong></p>
       <p>
         <a class="kontak-link" href="https://www.instagram.com/haya.lintang">Instagram</a>
         <a class="kontak-link" href="mailto:hayalintangcahyawi@gmail.com">Email</a>
         <a class="kontak-link" href="https://github.com/hyWorkspace">GitHub</a>
       </p>
+
+      <button type="button" id="btn-cek">Cek Info Diri</button>
+      <p id="hasil-cek"></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Haya Lintang Cahyawi.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
